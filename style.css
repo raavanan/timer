@@ -1,0 +1,125 @@
+body{
+	background-color: #222;
+	font-family: Montserrat;
+}
+#timer{
+	width:500px;
+	height:200px;
+	position:absolute;
+	top:0;
+	bottom:0;
+	left:0;
+	right:0;
+	margin: auto;
+	background-color: #fff;
+	text-align: center;
+}
+.border-div{
+	width:70%;
+	height:80%;
+	border:1px dashed #333;
+	position: absolute;
+	top:35px;
+	left:0;
+	right:0;
+	bottom:0;
+	margin:auto;
+	z-index:1;
+}
+#timer .title{
+width:210px;
+text-align: center;
+margin: auto;
+position: relative;
+z-index:3;
+background-color: #fff;
+
+}
+.digit{
+	width:50px;
+	height:50px;
+	font-size: 18px;
+	float:left;
+}
+#deadline{
+	width:300px;
+}
+
+.timerFields{
+	display:none;
+}
+.timer-container{
+	width:100%;
+	height:80%;
+	position: relative;
+	z-index:3;
+	background-color: #fff;
+}
+.grp{
+	float:left;
+	margin-right:20px;
+}
+.days{
+	margin-left: 65px;
+}
+.panel{
+	width:30px;
+	height:45px;
+	border-radius: 2px;
+	background-color: #fff;
+	float:left;
+	margin-right:10px;
+	color:#fff;
+}
+
+
+.upper-panel{
+	width:30px;
+	height:25px;
+	margin-bottom: 2px;
+	border-radius: 2px 2px 0px 0px;
+	overflow: hidden;
+	-webkit-perspective: 150px; /* Chrome, Safari, Opera */
+    -webkit-perspective-origin: 100% 100%; /* Chrome, Safari, Opera */
+    perspective: 150px;
+    perspective-origin: 100% 100%;
+	transition:all 0.4s ease;
+	-webkit-transition:all 0.4s ease;
+}
+.lower-panel{
+	width:30px;
+	height:17px;
+	border-radius: 0px 0px 2px 2px;
+	overflow: hidden;
+	-webkit-perspective: 150px; /* Chrome, Safari, Opera */
+    -webkit-perspective-origin: 100% 100%; /* Chrome, Safari, Opera */
+    perspective: 150px;
+    perspective-origin: 100% 100%;
+	transition:all 0.4s ease;
+	-webkit-transition:all 0.4s ease;
+}
+.upper-panel h5{
+	margin: 0px;
+	margin-top: 2px;
+	font-size: 32px;
+}
+.lower-panel h5{
+	margin: 0px;
+	margin-top: -25px;
+	font-size: 32px;
+}
+.days .panel .upper-panel, .days .panel .lower-panel{
+	background-color: #792387;
+}
+.hrs .panel .upper-panel, .hrs .panel .lower-panel{
+	background-color: #D82183;
+}
+.mins .panel .upper-panel, .mins .panel .lower-panel{
+	background-color: #1D2063;
+}
+.secs .panel .upper-panel, .secs .panel .lower-panel{
+	background-color: #D74C57;
+}
+.animate{
+	transform:rotateX(-180deg);
+}
