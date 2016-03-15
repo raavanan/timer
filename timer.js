@@ -30,13 +30,13 @@ function updateClock(time) {
 
   if(secs.length > 1){
       if(sec1 == secs[0]){
-      console.log("same");
+
     } else {
       sec1 = secs[0];
       updatePanel("sec1", secs[0]);
     }
       if(sec0 == secs[1]){
-      console.log("same");
+
     } else {
       sec0 = secs[1];
       updatePanel("sec0", secs[1]);
@@ -44,7 +44,7 @@ function updateClock(time) {
   } else {
 
    if(sec0 == secs[0]){
-      console.log("same");
+
     } else {
       sec0 = secs[0];
       updatePanel("sec0", secs[0]);
@@ -52,13 +52,13 @@ function updateClock(time) {
   }
   if(mins.length > 1){
       if(min1 == mins[0]){
-      console.log("same");
+
     } else {
       min1 = mins[0];
       updatePanel("min1", mins[0]);
     }
       if(min0 == mins[1]){
-      console.log("same");
+
     } else {
       min0 = mins[1];
       updatePanel("min0", mins[1]);
@@ -66,7 +66,7 @@ function updateClock(time) {
   } else {
 
    if(min0 == mins[0]){
-      console.log("same");
+
     } else {
       min0 = mins[0];
       updatePanel("min0", mins[0]);
@@ -74,13 +74,13 @@ function updateClock(time) {
   }
   if(hrs.length > 1){
       if(hr1 == hrs[0]){
-      console.log("same");
+
     } else {
       hr1 = hrs[0];
       updatePanel("hr1", hrs[0]);
     }
       if(hr0 == hrs[1]){
-      console.log("same");
+
     } else {
       hr0 = hrs[1];
       updatePanel("hr0", hrs[1]);
@@ -88,7 +88,7 @@ function updateClock(time) {
   } else {
 
    if(hr0 == hrs[0]){
-      console.log("same");
+
     } else {
       hr0 = hrs[0];
       updatePanel("hr0", hrs[0]);
@@ -96,13 +96,13 @@ function updateClock(time) {
   }
   if(days.length > 1){
       if(day1 == days[0]){
-      console.log("same");
+
     } else {
       day1 = days[0];
       updatePanel("day1", days[0]);
     }
       if(day0 == days[1]){
-      console.log("same");
+
     } else {
       day0 = days[1];
       updatePanel("day0", days[1]);
@@ -110,7 +110,7 @@ function updateClock(time) {
   } else {
 
    if(day0 == days[0]){
-      console.log("same");
+
     } else {
       day0 = days[0];
       updatePanel("day0", days[0]);
@@ -121,11 +121,14 @@ function updateClock(time) {
 function updatePanel(selector, value){
 
   var divs = $("#"+selector).children("div.upper-panel");
-  divs.addClass("animate");
+  //divs.addClass("animate");
   setTimeout(function(){
-    divs.removeClass("animate");
     $("."+selector).text(value);
-  }, 400);
+  }, 500);
+
+  // setTimeout(function(){
+  //   divs.removeClass("animate");
+  // }, 600);
 
 }
 var timer;
